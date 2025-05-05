@@ -1,0 +1,2 @@
+// Crea una función llamada sumarProductos() que acepte dos parámetros: precioUnitario y cantidadDeseada. CC
+// La función debe calcular y devolver el total gastado en un producto multiplicando el precio por la cantidad comprada.
