@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MinimalShop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <i class="fas fa-store"></i>
+          <span>MinimalShop</span>
+        </div>
+        <div class="nav-icons">
+          <div class="nav-icon" id="cartIcon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Diseño Minimalista, Experiencia Avanzada</h1>
+      <p>
+        Descubre nuestra colección de productos cuidadosamente seleccionados con
+        la mejor calidad y diseño
+      </p>
+      <button class="cta-button">Explorar Colección</button>
+    </section>
+
+    <!-- Productos Destacados -->
+    <div class="container">
+      <h2 class="section-title">Productos Destacados</h2>
+      <div class="product-grid" id="productGrid">
+        <!-- Productos -->
+      </div>
+    </div>
+
+    <!-- Carrito de Compras -->
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h2>Tu Carrito</h2>
+        <button class="close-cart" id="closeCart">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Ítems del carrito -->
+        <div class="empty-cart-message" id="emptyCartMessage">
+          <i
+            class="fas fa-shopping-cart"
+            style="font-size: 3rem; margin-bottom: 1rem"
+          ></i>
+          <p>Tu carrito está vacío</p>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="checkout-btn">Finalizar Compra</button>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="toast" id="toast">Producto agregado al carrito!</div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>MinimalShop</h3>
+          <p>
+            Tienda en línea especializada en productos minimalistas de alta
+            calidad y diseño.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Enlaces Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Categorías</h3>
+          <ul class="footer-links">
+            <li><a href="#">Electrónica</a></li>
+            <li><a href="#">Hogar</a></li>
+            <li><a href="#">Moda</a></li>
+            <li><a href="#">Accesorios</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contacto</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123</li>
+            <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+            <li><i class="fas fa-envelope"></i> info@minimalshop.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2023 MinimalShop. Todos los derechos reservados.
+      </div>
+    </footer>
+  </body>
+</html>
